@@ -26,8 +26,8 @@ const Hero = () => {
             {/* Paragraph */}
             <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
               I build because I’m curious. From web dev to AI/ML, I enjoy
-              breaking things apart, understanding how they work, and putting
-              them back together better and smarter each time.
+              building things, breaking them apart, and putting them back
+              together better and smarter each time.
             </p>
 
             {/* Buttons */}
