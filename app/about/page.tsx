@@ -112,19 +112,23 @@ const About = () => {
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2 space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  I&apos;m a passionate software developer with a deep
-                  fascination for artificial intelligence and machine learning.
-                  My journey began with a curiosity about how technology can
-                  solve real-world problems and has evolved into a comprehensive
-                  skill set spanning full-stack development and AI/ML
+                  My journey as a software developer began unexpectedly after
+                  class 12th, when I was just sitting at home with no clear
+                  direction. That&apos;s when my sister, noticing my idle time,
+                  encouraged me to start learning Python. Little did I know that
+                  this small nudge would ignite a deep fascination for
+                  technology and its potential to solve real-world problems.
+                  Over time, my curiosity grew into a full-blown passion, and I
+                  found myself diving into full-stack development and AI/ML
                   engineering.
                 </p>
                 <p>
-                  What drives me is the intersection of creativity and logic —
-                  building applications that not only function seamlessly but
-                  also provide meaningful experiences for users. I believe in
-                  the power of clean code, thoughtful design, and continuous
-                  learning to create solutions that make a difference.
+                  What truly drives me is the sweet spot where creativity meets
+                  logic — building applications that not only work flawlessly
+                  but also provide real value to users. I&apos;m a firm believer
+                  in the power of clean, efficient code, thoughtful design, and
+                  continuous learning to craft solutions that truly make a
+                  difference.
                 </p>
               </div>
               <div className="flex flex-col justify-center space-y-4">
