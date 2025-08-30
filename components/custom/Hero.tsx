@@ -33,18 +33,23 @@ const Hero = () => {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <Link
-                href="#"
+                href="/projects"
                 className="bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200 text-center text-lg"
               >
                 View Projects
               </Link>
-              <Link
-                href="#"
-                className="border-2 border-black text-black px-8 py-4 rounded-lg font-medium hover:bg-black hover:text-white transition-colors duration-200 flex items-center justify-center gap-3 text-lg"
+              <a
+                href="/aayush-samal-resume.pdf"
+                download="aayush-samal-resume.pdf"
+                className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 hover:scale-105 transition-all duration-200 shadow-lg group"
               >
-                Download Résumé (PDF)
-                <Download size={20} strokeWidth={2} />
-              </Link>
+                <Download
+                  size={20}
+                  strokeWidth={2}
+                  className="group-hover:animate-bounce"
+                />
+                Download Résumé
+              </a>
             </div>
           </div>
 
@@ -63,7 +68,7 @@ const Hero = () => {
             {/* Social Icons - Centered under the box */}
             <div className="flex gap-6 justify-center">
               <Link
-                href="#"
+                href="https://github.com/aayushxtech"
                 className="group text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="GitHub"
               >
@@ -72,7 +77,7 @@ const Hero = () => {
                 </span>
               </Link>
               <Link
-                href="#"
+                href="https://linkedin.com/in/aayush-samal"
                 className="group text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="LinkedIn"
               >
@@ -81,7 +86,7 @@ const Hero = () => {
                 </span>
               </Link>
               <Link
-                href="#"
+                href="https://x.com/AayushxTech"
                 className="group text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="X/Twitter"
               >

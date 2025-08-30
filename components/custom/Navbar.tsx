@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +14,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
         {/* Logo Section */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 border-2 border-black rounded-lg flex items-center justify-center text-black font-bold text-xl shadow-sm">
-            ★
+          <div className="w-9 h-9 border-2 border-black rounded-lg flex items-center justify-center text-black font-bold text-xl shadow-sm overflow-hidden">
+            <Image
+              src="/icon.ico"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
           </div>
           <span className="text-black font-bold text-xl tracking-tight">
             aayushxtech

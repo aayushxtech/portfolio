@@ -26,7 +26,7 @@ const ContactMe = () => {
               Let&apos;s Connect
             </h2>
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-1 bg-gradient-to-r from-black to-black rounded-full" />
+              <div className="w-16 h-1 bg-gradient-to-r from-black via-white to-black rounded-full" />
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
               Always open to learning, sharing, and building with others. If
@@ -60,7 +60,7 @@ const ContactMe = () => {
                 </span>
               </Link>
               <Link
-                href="https://linkedin.com/in/aayushxtech"
+                href="https://linkedin.com/in/aayush-samal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group text-black hover:text-gray-600 transition-colors duration-200"
@@ -71,7 +71,7 @@ const ContactMe = () => {
                 </span>
               </Link>
               <Link
-                href="https://twitter.com/aayushxtech"
+                href="https://x.com/AayushxTech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group text-black hover:text-gray-600 transition-colors duration-200"

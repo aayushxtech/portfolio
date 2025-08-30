@@ -1,0 +1,26 @@
+{
+  "name": "Aayush Samal - Computer Science Student & AI/ML Developer Portfolio",
+  "short_name": "Aayush Samal",
+  "description": "Portfolio of Aayush Samal, Computer Science Student at SRM Institute of Science and Technology, Chennai. Specializing in AI/ML development and software engineering in Tamil Nadu, India",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["portfolio", "developer", "technology"],
+  "icons": [
+    {
+      "src": "/icon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ]
+}

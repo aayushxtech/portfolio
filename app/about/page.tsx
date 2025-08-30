@@ -19,6 +19,7 @@ import {
   Twitter,
   Download,
   Mail,
+  Trophy,
 } from "lucide-react";
 
 const About = () => {
@@ -29,6 +30,14 @@ const About = () => {
       year: "2024-2028",
       grade: "9.28 CGPA",
       description: "Computer Science & Engineering",
+    },
+    {
+      title: "3x Hackathon Winner",
+      institution: "National Level Hackathons",
+      year: "2024-2025",
+      grade: "",
+      description:
+        "Won multiple hackathons showcasing innovative solutions in AI/ML and web development",
     },
   ];
 
@@ -72,15 +81,14 @@ const About = () => {
 
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-8 border-4 border-black rounded-full flex items-center justify-center bg-white shadow-lg">
-                <span className="text-4xl font-bold text-black">
-                  <Image
-                    src="/path/to/image.jpg"
-                    alt="My Image"
-                    width={128}
-                    height={128}
-                  />
-                </span>
+              <div className="w-32 h-32 mx-auto mb-8 border-4 border-black rounded-full flex items-center justify-center bg-white shadow-lg overflow-hidden">
+                <Image
+                  src="/profile-pic.jpg"
+                  alt="My Image"
+                  width={128}
+                  height={128}
+                  className="rounded-full object-cover"
+                />
               </div>
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold text-black mb-6 tracking-tight">
@@ -143,7 +151,7 @@ const About = () => {
             <div className="flex items-center justify-center mb-16">
               <div className="w-12 h-1 bg-black mr-6"></div>
               <h2 className="text-3xl lg:text-4xl font-bold text-black text-center">
-                Academic Achievements
+                Achievements
               </h2>
               <div className="w-12 h-1 bg-black ml-6"></div>
             </div>
@@ -156,7 +164,11 @@ const About = () => {
                   <CardHeader className="p-6">
                     <div className="flex justify-between items-start mb-3">
                       <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center group-hover:bg-gray-800 transition-colors duration-300">
-                        <GraduationCap size={24} color="white" />
+                        {achievement.title.includes("Hackathon") ? (
+                          <Trophy size={24} color="white" />
+                        ) : (
+                          <GraduationCap size={24} color="white" />
+                        )}
                       </div>
                       <span className="text-sm font-semibold text-gray-600 bg-gray-100 px-3 py-1 rounded-full flex items-center gap-1">
                         <Calendar size={14} className="mr-1" />
@@ -254,8 +266,9 @@ const About = () => {
               possibilities.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link
-                href="#"
+              <a
+                href="/aayush-samal-resume.pdf"
+                download="aayush-samal-resume.pdf"
                 className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 hover:scale-105 transition-all duration-200 shadow-lg group"
               >
                 <Download
@@ -264,7 +277,7 @@ const About = () => {
                   className="group-hover:animate-bounce"
                 />
                 Download Résumé
-              </Link>
+              </a>
               <Link
                 href="mailto:aayushxtech@gmail.com"
                 className="inline-flex items-center gap-3 border-2 border-black text-black px-8 py-4 rounded-lg font-medium hover:bg-black hover:text-white hover:scale-105 transition-all duration-200 group"
@@ -297,7 +310,7 @@ const About = () => {
                 <Github size={24} />
               </Link>
               <Link
-                href="https://linkedin.com/in/aayushxtech"
+                href="https://linkedin.com/in/aayush-samal"
                 className="w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center text-black hover:text-white hover:bg-black hover:border-black transition-all duration-300 hover:scale-110 shadow-md"
                 aria-label="LinkedIn"
                 target="_blank"
@@ -306,7 +319,7 @@ const About = () => {
                 <Linkedin size={24} />
               </Link>
               <Link
-                href="https://twitter.com/aayushxtech"
+                href="https://x.com/AayushxTech"
                 className="w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center text-black hover:text-white hover:bg-black hover:border-black transition-all duration-300 hover:scale-110 shadow-md"
                 aria-label="X/Twitter"
                 target="_blank"

@@ -87,7 +87,7 @@ const Contact = () => {
                     </span>
                   </Link>
                   <Link
-                    href="https://linkedin.com/in/aayushxtech"
+                    href="https://linkedin.com/in/aayush-samal"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group text-black hover:text-gray-600 transition-colors duration-200"
@@ -98,7 +98,7 @@ const Contact = () => {
                     </span>
                   </Link>
                   <Link
-                    href="https://twitter.com/aayushxtech"
+                    href="https://x.com/AayushxTech"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group text-black hover:text-gray-600 transition-colors duration-200"

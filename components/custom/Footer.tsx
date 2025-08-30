@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,8 +8,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-6">
         {/* Name/Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 border-2 border-white rounded-lg flex items-center justify-center text-white font-bold text-xl">
-            ★
+          <div className="w-9 h-9 border-2 border-white rounded-lg flex items-center justify-center text-white font-bold text-xl overflow-hidden">
+            <Image
+              src="/icon.ico"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
           </div>
           <span className="text-white font-bold text-xl tracking-tight">
             aayushxtech
