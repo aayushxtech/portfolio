@@ -53,13 +53,13 @@ const FeaturedProjects = () => {
     <section className="w-full bg-gray-50 py-24 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black">
+        <div className="flex flex-col items-center gap-4 mb-12 sm:flex-row sm:items-center sm:justify-between">
+          <h2 className="text-4xl lg:text-5xl font-bold text-black text-center sm:text-left">
             Featured Projects
           </h2>
           <Link
-            href="#"
-            className="text-black font-medium hover:underline transition-colors duration-200 flex items-center gap-2 text-lg"
+            href="/projects"
+            className="mt-2 inline-flex items-center gap-2 text-lg font-medium transition-colors duration-200 px-4 py-2 rounded-md bg-black text-white hover:brightness-90 sm:bg-transparent sm:text-black sm:px-0 sm:py-0 sm:rounded-none sm:hover:underline"
           >
             View All
             <ExternalLink size={20} strokeWidth={2} />
@@ -74,16 +74,16 @@ const FeaturedProjects = () => {
               className="bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 rounded-lg"
             >
               <CardHeader className="p-6">
-                <CardTitle className="text-xl font-bold text-black mb-3 leading-tight">
+                <CardTitle className="text-xl font-bold text-black mb-3 leading-tight text-center sm:text-left">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-gray-600 leading-relaxed">
+                <CardDescription className="text-gray-600 leading-relaxed text-center sm:text-left">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               <CardContent className="px-6 pb-6 pt-0">
                 {/* Tech Stack Badges */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-6 justify-center sm:justify-start">
                   {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
@@ -95,7 +95,7 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* Action Links */}
-                <div className="flex gap-4 text-sm">
+                <div className="flex flex-col items-center gap-2 text-sm sm:flex-row sm:gap-4 sm:items-start">
                   <Link
                     href={project.liveDemo}
                     className="text-black font-medium hover:underline transition-colors duration-200 flex items-center gap-1"

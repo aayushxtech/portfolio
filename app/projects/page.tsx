@@ -102,9 +102,9 @@ const Projects = () => {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section with Visual Elements */}
-        <section className="w-full bg-white py-32 px-6 relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
+        <section className="w-full bg-white py-12 sm:py-32 px-4 sm:px-6 relative overflow-hidden">
+          {/* Background Pattern - hidden on small screens to avoid overflow/alignment issues */}
+          <div className="hidden sm:block absolute inset-0 opacity-5">
             <div className="absolute top-20 left-10 w-32 h-32 border-2 border-black rounded-full"></div>
             <div className="absolute top-40 right-20 w-24 h-24 bg-black rounded-lg rotate-12"></div>
             <div className="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-black rotate-45"></div>
@@ -115,7 +115,7 @@ const Projects = () => {
             {/* Visual Title Enhancement */}
             <div className="mb-8">
               <div className="w-16 h-1 bg-black mx-auto mb-6"></div>
-              <h1 className="text-5xl lg:text-7xl font-bold text-black mb-4 tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-black mb-4 tracking-tight">
                 My Projects
               </h1>
               <div className="flex items-center justify-center gap-2 mb-6">
@@ -125,7 +125,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-12">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-12">
               A collection of projects showcasing my skills in web development,
               artificial intelligence, and software engineering. Each project
               represents a unique challenge and learning experience.
@@ -134,14 +134,14 @@ const Projects = () => {
             {/* Stats Display */}
             <div className="flex justify-center gap-8 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">
+                <div className="text-2xl sm:text-3xl font-bold text-black">
                   {allProjects.length}+
                 </div>
                 <div className="text-sm text-gray-600">Projects</div>
               </div>
               <div className="w-px h-12 bg-gray-300"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">
+                <div className="text-2xl sm:text-3xl font-bold text-black">
                   {categories.length - 1}
                 </div>
                 <div className="text-sm text-gray-600">Categories</div>
@@ -156,7 +156,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <section className="w-full bg-gray-50 py-24 px-6">
+        <section className="w-full bg-gray-50 py-12 sm:py-24 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             {/* Enhanced Category Filter */}
             <div className="mb-16">
@@ -172,7 +172,7 @@ const Projects = () => {
                   <button
                     key={category.name}
                     onClick={() => setSelectedCategory(category.name)}
-                    className={`group px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                    className={`group px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium transition-all duration-300 ${
                       selectedCategory === category.name
                         ? "bg-black text-white shadow-lg scale-105"
                         : "bg-white text-gray-700 hover:bg-gray-100 hover:shadow-md border border-gray-200"
@@ -208,7 +208,7 @@ const Projects = () => {
                   {/* Enhanced Hover Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                  <CardHeader className="p-6 relative z-10">
+                  <CardHeader className="p-4 sm:p-6 relative z-10">
                     {/* Category Badge */}
                     <div className="flex items-center justify-end mb-4">
                       <span className="bg-black text-white text-xs font-semibold px-3 py-2 rounded-full shadow-md">
@@ -225,7 +225,7 @@ const Projects = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="px-6 pb-6 pt-0 relative z-10">
+                  <CardContent className="px-4 sm:px-6 pb-6 pt-0 relative z-10">
                     {/* Tech Stack Badges */}
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.techStack.map((tech, techIndex) => (
@@ -278,7 +278,7 @@ const Projects = () => {
             </div>
 
             {/* Bottom Visual Element */}
-            <div className="mt-20 flex justify-center">
+            <div className="mt-12 sm:mt-20 flex justify-center">
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-black rounded-full animate-pulse"></div>
                 <div className="w-24 h-1 bg-gradient-to-r from-black via-gray-400 to-black"></div>
