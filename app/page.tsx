@@ -10,19 +10,9 @@ import AboutMe from "@/components/custom/AboutMe";
 import ContactMe from "@/components/custom/ContactMe";
 import { gsap } from "gsap";
 
-import { InertiaPlugin } from "gsap/InertiaPlugin";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { Physics2DPlugin } from "gsap/Physics2DPlugin";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(
-  InertiaPlugin,
-  MotionPathPlugin,
-  Physics2DPlugin,
-  ScrollToPlugin,
-  ScrollTrigger
-);
+gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   // Refs for subtle section animations
@@ -64,22 +54,7 @@ const Page = () => {
       );
     });
 
-    // Gentle rotation animation for decorative elements (if any exist)
-    gsap.to(".rotate-element", {
-      rotation: 360,
-      duration: 20,
-      repeat: -1,
-      ease: "none",
-    });
-
-    // Subtle scale pulse for interactive elements
-    gsap.to(".pulse-element", {
-      scale: 1.05,
-      duration: 2,
-      repeat: -1,
-      yoyo: true,
-      ease: "power1.inOut",
-    });
+    // (Removed continuous rotate and pulse animations to reduce motion)
 
     // Cleanup on unmount
     return () => {
