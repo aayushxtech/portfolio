@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     "Student Developer",
     "Tech Student Chennai",
     "AI Developer India",
+    "aayushxtech",
   ],
   authors: [{ name: "Aayush Samal" }],
   creator: "Aayush Samal",
